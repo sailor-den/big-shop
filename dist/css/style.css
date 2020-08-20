@@ -266,26 +266,41 @@ template {
 @font-face {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
-  src: local("Roboto"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-style: italic;
-  font-weight: 700;
-  src: local("Roboto"), url("../fonts/Roboto-BoldItalic.woff") format("woff"), url("../fonts/Roboto-BoldItalic.woff2") format("woff2"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-style: italic;
   font-weight: 400;
-  src: local("Roboto"), url("../fonts/Roboto-Italic.woff") format("woff"), url("../fonts/Roboto-Italic.woff2") format("woff2"); }
+  src: local("Roboto"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"); }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Montserrat"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Light.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "MyriadPro";
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2"); }
+  src: local("MyriadPro"), url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Regular.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("OpenSans"), url("../fonts/OpenSans/opensans-regular.woff") format("woff"), url("../fonts/OpenSans/opensans-regular.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("OpenSans"), url("../fonts/OpenSans/opensans-semibold.woff") format("woff"), url("../fonts/OpenSans/opensans-semibold.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("OpenSans"), url("../fonts/OpenSans/opensans-bold.woff") format("woff"), url("../fonts/OpenSans/opensans-bold.woff2") format("woff2"); }
+
+* {
+  box-sizing: border-box; }
 
 ::placeholder {
   color: #666; }
@@ -301,7 +316,11 @@ input, textarea {
   input:required:valid, textarea:required:valid {
     border-color: green; }
 
+html {
+  height: 100%; }
+
 body {
+  height: 100%;
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -311,5 +330,87 @@ body {
   overflow-x: hidden;
   color: #333; }
 
-body {
-  display: block; }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+p {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  margin: 0;
+  padding: 0; }
+
+.main-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  background: url("../images/main_bg.jpg") center no-repeat; }
+
+.container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.header {
+  padding: 80px 0px 0px 0px; }
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: -1px 5px 24px 1px rgba(189, 227, 239, 0.75);
+  background-color: #ffffff;
+  border-radius: 50px;
+  min-width: 370px;
+  height: 65px;
+  padding: 0px 30px;
+  position: relative; }
+  .menu::after {
+    content: '';
+    display: inline-block;
+    height: 35px;
+    width: 1px;
+    position: absolute;
+    right: 50%;
+    background-color: #e0e0e0; }
+  .menu__item {
+    color: #151515;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px; }
+    .menu__item:hover {
+      text-decoration: none; }
+    .menu__item_search {
+      background: url(../images/icons/loupe.png) no-repeat;
+      padding: 0px 0px 0px 40px; }
+    .menu__item_dropdown {
+      background: url("../images/icons/arrow-down.png") right no-repeat;
+      padding: 0px 40px 0px 0px; }
+
+.page {
+  padding: 220px 0px 0px 0px; }
+  .page__content {
+    text-align: right; }
+  .page__title {
+    font-family: Roboto, sans-serif;
+    font-size: 115px;
+    font-weight: 700;
+    line-height: 120px;
+    color: #090000; }

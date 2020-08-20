@@ -13,7 +13,7 @@ $gutter: $grid-gutter-width
 // IMPORT SECTION
 
 @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
-@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
 // @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
 // @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
 
@@ -39,10 +39,18 @@ $gutter: $grid-gutter-width
 		src: local($fname), url($furl) format('woff'), url($furl_2) format('woff2')
 		    
 
-@include font('Roboto', normal, 700, '../fonts/Roboto-Bold.woff', '../fonts/Roboto-Bold.woff2')
-@include font('Roboto', italic, 700, '../fonts/Roboto-BoldItalic.woff', '../fonts/Roboto-BoldItalic.woff2')
-@include font('Roboto', italic, 400, '../fonts/Roboto-Italic.woff', '../fonts/Roboto-Italic.woff2')
-@include font('Roboto', normal, 400, '../fonts/Roboto-Regular.woff', '../fonts/Roboto-Regular.woff2')
+// @include font('Roboto', normal, 700, '../fonts/Roboto-Bold.woff', '../fonts/Roboto-Bold.woff2')
+// @include font('Roboto', italic, 700, '../fonts/Roboto-BoldItalic.woff', '../fonts/Roboto-BoldItalic.woff2')
+// @include font('Roboto', italic, 400, '../fonts/Roboto-Italic.woff', '../fonts/Roboto-Italic.woff2')
+@include font('Roboto', normal, 400, '../fonts/Roboto/Roboto-Regular.woff', '../fonts/Roboto/Roboto-Regular.woff2')
+
+@include font('Montserrat', normal, 300, '../fonts/Montserrat/Montserrat-Light.woff', '../fonts/Montserrat/Montserrat-Light.woff2')
+
+@include font('MyriadPro', normal, 400, '../fonts/MyriadPro/MyriadPro-Regular.woff', '../fonts/MyriadPro/MyriadPro-Regular.woff2')
+
+@include font('OpenSans', normal, 400, '../fonts/OpenSans/opensans-regular.woff', '../fonts/OpenSans/opensans-regular.woff2')
+@include font('OpenSans', normal, 600, '../fonts/OpenSans/opensans-semibold.woff', '../fonts/OpenSans/opensans-semibold.woff2')
+@include font('OpenSans', normal, 700, '../fonts/OpenSans/opensans-bold.woff', '../fonts/OpenSans/opensans-bold.woff2')
 
 // For example mixin font
 
@@ -51,8 +59,15 @@ $gutter: $grid-gutter-width
 	font-weight: bold
 	font-size: 25px
 
+@mixin Play-b 
+	font-family: Play, sans-serif
+	font-weight: bold
+
 
 // GENERAL DOCUMENT STYLES
+
+*
+	box-sizing: border-box
 
 ::placeholder
 	color: #666
@@ -68,7 +83,11 @@ input, textarea
 	&:required:valid
 		border-color: green
 
+html 
+    height: 100%
+
 body
+	height: 100%
 	font-family: $roboto
 	font-size: $fontsize
 	font-weight: normal
@@ -77,3 +96,36 @@ body
 	line-height: 1.65
 	overflow-x: hidden
 	color: $textcolor
+
+img 
+	display: block
+	max-width: 100%
+	height: auto 
+
+ul 
+	margin: 0
+	padding: 0
+	list-style: none
+
+p 
+    margin: 0
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 
+	font-weight: 300
+	margin: 0
+	padding: 0
+
+.main-container
+	max-width: 1600px
+	margin: 0 auto 
+	background: url('../images/main_bg.jpg') center no-repeat
+
+.container	
+    max-width: 1210px
+    margin: 0 auto 
+    padding: 0 20px
