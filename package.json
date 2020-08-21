@@ -9,6 +9,7 @@
 	"author": "sailor-den",
 	"license": "ISC",
 	"devDependencies": {
+		"@fortawesome/fontawesome-free": "^5.1.0-9",
 		"bootstrap": "^4.5.0",
 		"browser-sync": "^2.26.10",
 		"del": "^5.1.0",
@@ -26,5 +27,6 @@
 		"gulp-ttf2woff2": "^3.0.0",
 		"gulp-uglify-es": "^2.0.0",
 		"gulp-webp": "^4.0.1"
-	}
+	},
+	"dependencies": {}
 }
