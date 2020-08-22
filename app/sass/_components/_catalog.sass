@@ -1,0 +1,188 @@
+.catalog
+    position: relative
+    &__menu
+        padding: 0px 100px
+        margin: 0px 0px 85px 0px
+    &__container
+        max-width: 1380px
+        margin: -35px auto 0px
+        padding: 0px 150px 114px 150px
+        box-shadow: -1px 5px 48px 3px rgba(237, 235, 253, 0.75)
+        background-color: #ffffff
+        position: relative
+        z-index: 2
+    &__title
+        font-family: OpenSans, sans-serif
+        text-align: center
+        color: #333333
+        font-size: 50px
+        font-weight: 700
+        // line-height: 26px
+        letter-spacing: 0.5px
+        padding: 96px 0px 117px 0px
+        position: relative
+        z-index: 4
+    &__body
+        
+    &__group
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        justify-content: center
+        position: relative
+    &__item
+        flex-basis: 33.33%
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: 0px 0px 50px 0px
+
+.product
+    text-align: center
+    padding: 20px 20px 0px 20px
+    position: relative
+    &-top
+        display: flex
+        width: 100%
+        align-items: center
+        justify-content: space-between
+        visibility: hidden
+        &__item
+            font-family: OpenSans, sans-serif
+            font-size: 14px
+            font-weight: 400
+            line-height: 25px
+            letter-spacing: 0.14px
+            color: #bbbbbb
+            padding: 0px 0px 0px 27px
+            background-position: center left
+            background-repeat: no-repeat
+            &:hover
+                color: #bbbbbb
+                text-decoration: none 
+            &_like
+                background-image: url('../images/icons/like.png')
+            &_comments
+                background-image: url('../images/icons/comments.png')
+                padding: 0px 0px 0px 30px
+    &:hover
+        box-shadow: -1px 5px 48px 3px rgba(221, 223, 224, 0.75)
+        .product__button
+            display: block
+        .product-top
+            visibility: visible 
+
+    &__img
+        margin: 0px 0px 28px 0px
+    &__title
+        font-family: OpenSans, sans-serif
+        font-size: 18px
+        font-weight: 400
+        line-height: 25px
+        letter-spacing: 0.18px
+        color: #777777
+        margin: 0px 0px 16px 0px
+    &__price
+        font-family: OpenSans, sans-serif
+        font-size: 25px
+        font-weight: 400
+        line-height: 25px
+        letter-spacing: 0.25px
+        color: #333333
+        margin: 0px 0px 70px 0px
+    &__button
+        display: none
+        font-family: OpenSans, sans-serif
+        font-size: 20px
+        font-weight: 400
+        line-height: 26px
+        color: #ffffff
+        text-align: center
+        line-height: 60px
+        position: absolute
+        bottom: -29px
+        box-shadow: -1px 5px 24px 1px rgba(240, 239, 254, 0.75)
+        background-color: #fcfcfc
+        background-image: linear-gradient(26deg, #8c84f9 0%, #a165f4 100%)
+        &:hover
+            text-decoration: none
+            color: #ffffff
+
+
+.before-after-elements-1
+    position: relative
+    &::before 
+        content: ''
+        position: absolute
+        background: url('../images/icons/circle_bold_big.png')center left no-repeat
+        top: 490px
+        left: 190px
+        width: 120px
+        height: 90px
+        z-index: 1
+    &::after
+        content: ''
+        position: absolute
+        background: url('../images/icons/square_bold_small.png')center center no-repeat
+        top: 562px
+        right: 234px
+        width: 60px
+        height: 50px
+        z-index: 3
+
+.before-after-elements-2
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        background: url('../images/icons/triangle_silod_big.png')center center no-repeat
+        top: 125px
+        left: 540px
+        width: 60px
+        height: 57px
+        z-index: 3
+    &::after
+        content: ''
+        position: absolute
+        background: url('../images/icons/snake.png')center center no-repeat
+        top: 60px
+        right: 450px
+        width: 60px
+        height: 90px
+        z-index: 3
+
+.before-after-elements-3
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        top: 76px
+        left: 704px
+        width: 5px
+        height: 105px
+        box-shadow: -1px 5px 24px 1px rgba(239, 232, 250, 0.75)
+        background-color: #dcfedb
+        transform: rotate(-24deg)
+        z-index: 3
+
+
+.before-after-elements-4
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        background: url('../images/icons/triangle_light_small.png')center center no-repeat
+        top: -160px
+        left: 227px
+        width: 60px
+        height: 50px
+        z-index: 2
+    &::after
+        content: ''
+        position: absolute
+        background: url('../images/icons/squre_bold_big.png')center center no-repeat
+        top: -160px
+        right: 212px
+        width: 100px
+        height: 90px
+        
